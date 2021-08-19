@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+    <style>
+        #grid{
+            display:grid;
+ 
+            /* 1st option */
+            /* grid-template-columns:auto auto auto; */
+            /* repeat(x,value) */
+            /* grid-template-columns:repeat(3,200px) */
+            /* unit px, auto, fraction */
+ 
+           grid-template-columns:repeat(2,1fr,2fr);
+ 
+        }
+         .item{
+            background: #343434;
+            color:#fff;
+            padding:20px;
+            margin:10px;
+            text-align: center;
+        }
+       #grid {
+        display: grid;   
+        grid-template-columns: repeat(2,1fr);
+        }
+    </style>
+ 
+</head>
+<body>
+    <section id="grid">
+        <aside class="item">Item 1</aside>
+        <aside class="item">Item 2</aside>
+        <aside class="item">Item 3</aside>
+        <aside class="item">Item 4</aside>
+    </section>
+    <main id="grid">
+        <section class="item">
+            <h1>Main SEction</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam incidunt ipsum eum, vitae iure ab fugiat facere eligendi officiis corrupti nostrum placeat? Id laudantium aliquid nisi reprehenderit soluta neque ipsam nesciunt fugit sequi? Ipsa ipsam earum animi ad aut est.</p>
+        </section>
+        <aside class="item">
+            <h1>Aside Section</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, inventore? Atque non maiores, reiciendis ipsum vel accusantium, recusandae incidunt eveniet asperiores consequatur fugit ut. Consequatur deserunt doloremque illum necessitatibus impedit.</p>
+        </aside>
+    </main>
+</body>
+</html>
